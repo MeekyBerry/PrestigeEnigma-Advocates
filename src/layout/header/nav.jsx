@@ -7,11 +7,7 @@ import Logo from "../../assets/image/Logo-Lawyer.png";
 import style from "./nav.module.css";
 
 export default function Nav() {
-  return (
-    <div>
-      <NavSmall />
-    </div>
-  );
+  return <NavSmall />;
 }
 
 export const CustomNavLink = ({ to, ...props }) => {

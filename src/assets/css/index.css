@@ -1,21 +1,12 @@
 :root {
   --primary-color: #c8ac48;
   --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --info-color: #17a2b8;
   --yellow-color: #f3c45e;
-  --yellow-color-light: #fff1a3;
   --gold-color: #fbaf19;
-  --danger-color: #dc3545;
   --light-color: #f8f9fc;
   --light-color-1: #f1f3f9;
   --dark-color: #111213;
   --dark-color-1: #1d1e20;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -33,6 +24,18 @@
 
 html {
   font-size: 50%;
+
+  @media (min-width: 37.5em) {
+    font-size: 62.5%;
+  }
+
+  @media (min-width: 62.5em) {
+    font-size: 68.75%;
+  }
+
+  @media (min-width: 112.5em) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -60,7 +63,9 @@ code {
     monospace;
 }
 
-a {
+a,
+a:link,
+a:visited {
   color: inherit;
   text-decoration: none;
   background-color: transparent;

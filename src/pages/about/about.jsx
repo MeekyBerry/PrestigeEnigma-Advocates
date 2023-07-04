@@ -7,10 +7,14 @@ import { FaFlagCheckered, FaSuitcase } from "react-icons/fa";
 import Nav from "../../layout/header/nav";
 import Footer from "../../layout/footer/footer";
 import style from "./about.module.css";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <section className={style.top}>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <Nav />
       <div className={style.wrapper}>
         <div className={style.bg}>{""}</div>

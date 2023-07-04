@@ -15,13 +15,17 @@ import style2 from "../about/about.module.css";
 import style3 from "../practice/practice.module.css";
 import Nav from "../../layout/header/nav";
 import Footer from "../../layout/footer/footer";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <section className={style.home}>
-      <Nav />
-      <div className={style.bg}>{""}</div>
+      <Helmet>
+        <title>Joel Catty Legal | Home</title>
+      </Helmet>
       <section className={style.wrapper}>
+        <Nav />
+        <div className={style.bg}>{""}</div>
         <section className={style.container}>
           <div className={style.head}>
             <span className={style.span}>{""}</span>

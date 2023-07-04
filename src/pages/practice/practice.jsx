@@ -14,10 +14,14 @@ import Nav from "../../layout/header/nav";
 import Footer from "../../layout/footer/footer";
 import topStyle from "../about/about.module.css";
 import style from "./practice.module.css";
+import { Helmet } from "react-helmet-async";
 
 const PracticeArea = () => {
   return (
     <section className={topStyle.top}>
+      <Helmet>
+        <title>Practice Area</title>
+      </Helmet>
       <Nav />
       <div className={topStyle.wrapper}>
         <div className={style.bg}>{""}</div>
