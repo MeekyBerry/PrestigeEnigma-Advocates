@@ -1,7 +1,7 @@
 import { React, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Fallback } from "./components/fallback";
-import Nav from "./layout/nav";
+// import Nav from "./layout/header/nav";
 import AppRoutes from "./routes";
 import Loader from "./assets/image/indicator.gif";
 
@@ -15,7 +15,7 @@ function App() {
         transform: "translate(-50%, -50%)"
       }}><img src={Loader} alt="Loading GIF" /></div>}>
         <div className="App">
-          <Nav />
+          {/* <Nav /> */}
           <AppRoutes />
         </div>
       </Suspense>
