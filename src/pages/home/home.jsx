@@ -22,6 +22,10 @@ const Home = () => {
     <section className={style.home}>
       <Helmet>
         <title>Joel Catty Legal | Home</title>
+        <meta
+          name="description"
+          content="Joel Catty Legal Group is a full-service law firm with a focus on litigation, real estate, and business transactions."
+        />
       </Helmet>
       <section className={style.wrapper}>
         <Nav />

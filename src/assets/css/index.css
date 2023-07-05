@@ -137,3 +137,29 @@ span {
   font-weight: inherit;
   line-height: inherit;
 }
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  width: 100%;
+}
+
+.img {
+  width: 40rem;
+  height: 40rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+.link {
+  color: var(--primary-color) !important;
+  text-transform: uppercase;
+}

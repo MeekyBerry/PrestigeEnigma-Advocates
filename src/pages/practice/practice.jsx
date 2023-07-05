@@ -21,6 +21,10 @@ const PracticeArea = () => {
     <section className={topStyle.top}>
       <Helmet>
         <title>Practice Area</title>
+        <meta
+          name="description"
+          content="Joel Catty Legal Group is a full-service law firm with a focus on litigation, real estate, and business transactions."
+        />
       </Helmet>
       <Nav />
       <div className={topStyle.wrapper}>

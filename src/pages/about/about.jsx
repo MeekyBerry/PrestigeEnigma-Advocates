@@ -14,6 +14,10 @@ const About = () => {
     <section className={style.top}>
       <Helmet>
         <title>About Us</title>
+        <meta
+          name="description"
+          content="Joel Catty Legal, was established in 1995 by Barrister Joel Catty to provide unparalleled legal services to individuals and businesses alike."
+        />
       </Helmet>
       <Nav />
       <div className={style.wrapper}>

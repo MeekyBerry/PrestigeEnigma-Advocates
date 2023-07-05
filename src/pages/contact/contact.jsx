@@ -12,6 +12,7 @@ const Contact = () => {
     <section className={topStyle.top}>
       <Helmet>
         <title>Contact Us</title>
+        <meta name="description" content="Contact Us" />
       </Helmet>
       <Nav />
       <div className={topStyle.wrapper}>
