@@ -19,18 +19,18 @@ import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
-    <section className={style.home}>
+    <main className={style.home}>
       <Helmet>
-        <title>Joel Catty Legal | Home</title>
+        <title>PrestigeEnigma | Home</title>
         <meta
           name="description"
-          content="Joel Catty Legal Group is a full-service law firm with a focus on litigation, real estate, and business transactions."
+          content="PrestigeEnigma Group is a full-service law firm with a focus on litigation, real estate, and business transactions."
         />
       </Helmet>
       <section className={style.wrapper}>
         <Nav />
         <div className={style.bg}>{""}</div>
-        <section className={style.container}>
+        <header className={style.container}>
           <div className={style.head}>
             <span className={style.span}>{""}</span>
             <h1 className={style.header}>Peer Voted No. 1 Law Firm</h1>
@@ -44,20 +44,20 @@ const Home = () => {
               Our fighting is for your justice!!!
             </h3>
           </div>
-        </section>
+        </header>
         <section className={style.container2}>
           <div className={style.box}>
             <h2 className={style.box_title}>
               <TfiLocationPin className={style.box_icon} /> Our Location
             </h2>
-            <p className={style.box_text}>WA 98504, United States</p>
+            <p className={style.box_text}>Asaba, Nigeria</p>
           </div>
           <div className={style.box}>
             <h2 className={style.box_title}>
               <IoIosCall className={style.box_icon} /> Call Us
             </h2>
-            <a href="tel: +1(512)333-4999" className={style.box_text}>
-              +1(512)333-4999
+            <a href="tel: +2348030849685" className={style.box_text}>
+              +234 803 0849 685
             </a>
           </div>
         </section>
@@ -165,7 +165,7 @@ const Home = () => {
         </div>
       </section>
       <Footer />
-    </section>
+    </main>
   );
 };
 

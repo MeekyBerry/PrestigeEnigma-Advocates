@@ -11,16 +11,16 @@ import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
-    <section className={style.top}>
+    <main className={style.top}>
       <Helmet>
-        <title>About Us</title>
+        <title>PrestigeEnigma | About</title>
         <meta
           name="description"
-          content="Joel Catty Legal, was established in 1995 by Barrister Joel Catty to provide unparalleled legal services to individuals and businesses alike."
+          content="PrestigeEnigma, was established in 1995 by Barrister Joel Catty to provide unparalleled legal services to individuals and businesses alike."
         />
       </Helmet>
       <Nav />
-      <div className={style.wrapper}>
+      <header className={style.wrapper}>
         <div className={style.bg}>{""}</div>
         <div className={style.header}>
           <h1 className={style.header_title}>ABOUT OUR FIRM</h1>
@@ -28,12 +28,11 @@ const About = () => {
             We Provide Reliable And Effective Legal Services
           </h2>
         </div>
-      </div>
+      </header>
       <section className={style.container}>
         <div className={style.content}>
           <p className={style.text}>
-            Joel Catty Legal, which is located in Olympia, WA 98504, United
-            States, was established in 1995 by Barrister Joel Catty to provide
+            PrestigeEnigma, which is located in Asaba, Delta State, Nigeria, was established in 1995 by PrestigeEnigma to provide
             unparalleled legal services to individuals and businesses alike. We
             are a full service law firm, providing a full range of legal
             services in all fields of the legal practice, inc. corporate -
@@ -49,7 +48,7 @@ const About = () => {
             obstacles to foreign investors and local businesses alike.
           </p>
         </div>
-        <div className={style.container2}>
+        <section className={style.container2}>
           <div className={style.box}>
             <h2 className={style.box_title}>
               Member of INTERNATIONAL ASSOCIATION OF LAW FIRMS
@@ -87,10 +86,10 @@ const About = () => {
             <h2 className={style.box_title}>Defining Success</h2>
             <FaFlagCheckered className={style.icon} />
           </div>
-        </div>
+        </section>
       </section>
       <Footer />
-    </section>
+    </main>
   );
 };
 

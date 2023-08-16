@@ -1,14 +1,10 @@
 import { React, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { RiMenu4Line } from "react-icons/ri";
 import { VscChromeClose } from "react-icons/vsc";
 import { LuPhoneCall } from "react-icons/lu";
 import Logo from "../../assets/image/Logo-Lawyer.png";
 import style from "./nav.module.css";
-
-export default function Nav() {
-  return <NavSmall />;
-}
 
 export const CustomNavLink = ({ to, ...props }) => {
   let activeStyle = {
@@ -25,19 +21,21 @@ export const CustomNavLink = ({ to, ...props }) => {
   );
 };
 
-const NavSmall = () => {
+export default function Nav() {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
     <header className={style.header}>
-      <figure className={style.figure}>
+      <Link to="/">
+        <figure className={style.figure}>
         <img src={Logo} alt="Logo" className={style.img} />
         <figcaption className={style.caption}>
-          <h1 className={style.title}>Joel Catty Legal</h1>
+          <h1 className={style.title}>PrestigeEnigma</h1>
           <p className={style.subtitle}>Advocates & Legal Consultants</p>
         </figcaption>
       </figure>
+      </Link>
       <div className={style.menu}>
         <button onClick={toggleMenu} className={style.toggle}>
           {showMenu ? (
@@ -68,15 +66,10 @@ const NavSmall = () => {
                 Contact
               </CustomNavLink>
             </li>
-            {/* <li className={style.item}>
-              <CustomNavLink to="/faq" onClick={() => setShowMenu(false)}>
-                FAQ
-              </CustomNavLink>
-            </li> */}
           </ul>
           <div className={style.phone}>
             <LuPhoneCall className={style.phone__icon} /> Tel:{" "}
-            <a href="tel:+1(512)333-4999">+1(512)333-4999</a>
+            <a href="tel:+2348030849685">+234 803 0849 685</a>
           </div>
         </nav>
       </div>

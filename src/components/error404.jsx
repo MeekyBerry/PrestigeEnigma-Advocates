@@ -8,7 +8,7 @@ const NotFound = () => {
   return (
     <section>
       <Helmet>
-        <title>404 Error Page</title>
+        <title>PrestigeEnigma | 404 Error Page</title>
         <meta name="description" content="Page not found" />
       </Helmet>
       <Nav />

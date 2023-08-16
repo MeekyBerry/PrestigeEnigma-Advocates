@@ -18,31 +18,31 @@ import { Helmet } from "react-helmet-async";
 
 const PracticeArea = () => {
   return (
-    <section className={topStyle.top}>
+    <main className={topStyle.top}>
       <Helmet>
-        <title>Practice Area</title>
+        <title>PrestigeEnigma | Practice Area</title>
         <meta
           name="description"
-          content="Joel Catty Legal Group is a full-service law firm with a focus on litigation, real estate, and business transactions."
+          content="PrestigeEnigma Group is a full-service law firm with a focus on litigation, real estate, and business transactions."
         />
       </Helmet>
       <Nav />
-      <div className={topStyle.wrapper}>
+      <section className={topStyle.wrapper}>
         <div className={style.bg}>{""}</div>
-        <div className={topStyle.header}>
+        <header className={topStyle.header}>
           <h1 className={topStyle.header_title}>Legal Services</h1>
           <h2 className={topStyle.header_subtitle}>
             We help people in solving legal issues!
           </h2>
-        </div>
-      </div>
+        </header>
+      </section>
       <section className={topStyle.container}>
         <div className={style.container}>
           <h2 className={style.heading}>
             We are experts in a lot of legal areas
           </h2>
           <p className={style.para}>
-            Joel Catty legal is a law firm that offers a wide range of legal
+            PrestigeEnigma is a law firm that offers a wide range of legal
             services to its clients. Our primary purpose is to provide
             exceptional legal services at a fair rate to ensure client
             happiness. Because of the firm’s size, Our attorneys are able to be
@@ -94,8 +94,7 @@ const PracticeArea = () => {
             <div className={style.box}>
               <h2 className={style.title}>Employment Law</h2>
               <p className={style.text}>
-                Employers like retailers and restaurants can benefit from Joel
-                Catty Legal Group as experienced employment attorneys defending
+                Employers like retailers and restaurants can benefit from PrestigeEnigma Group as experienced employment attorneys defending
                 business interests in Fair Labor Standards Act (FLSA) lawsuits.
               </p>
             </div>
@@ -196,7 +195,7 @@ const PracticeArea = () => {
         </section>
       </section>
       <Footer />
-    </section>
+    </main>
   );
 };
 
