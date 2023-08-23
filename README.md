@@ -1,3 +1,3 @@
-## PrestigeEnigma Law Firm
+## PrestigeEnigma Advocates and Legal Consultants
 
-** Responsive website for a fictionally law firm built with React and CSS modules.
+** Fully responsive website for Legal firm.
